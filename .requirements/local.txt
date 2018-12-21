@@ -1,0 +1,8 @@
+certifi==2018.11.29
+Django==2.1.4
+django-extensions==2.1.4
+django-json-secrets==0.1.11
+pytz==2018.7
+sentry-sdk==0.6.4
+six==1.12.0
+urllib3==1.24.1

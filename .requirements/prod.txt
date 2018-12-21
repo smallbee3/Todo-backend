@@ -1,0 +1,4 @@
+Django<2.2
+django-extensions<2.2
+django-json-secrets<0.2
+sentry-sdk<0.7
