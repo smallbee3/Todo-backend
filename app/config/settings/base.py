@@ -53,6 +53,10 @@ INSTALLED_APPS = [
     'cards',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'utils.custom_pagination.CustomPagination',
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
