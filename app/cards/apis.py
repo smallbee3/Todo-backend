@@ -3,6 +3,11 @@ from rest_framework import generics
 from cards.models import Card
 from .serializers import CardSerializer
 
+__all__ = (
+    'CardListCreateView',
+    'CardRetrieveUpdateDestroyView',
+)
+
 
 class CardListCreateView(generics.ListCreateAPIView):
     queryset = Card.objects.all()
