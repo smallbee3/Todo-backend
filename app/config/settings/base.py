@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Custom app
     'users',
+    'cards',
 ]
 
 MIDDLEWARE = [
