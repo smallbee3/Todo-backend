@@ -18,16 +18,15 @@ from djs import import_secrets
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ROOT_DIR = os.path.dirname(BASE_DIR)
-DSN_ADDRESS = ''
 
 # secrets
 SECRETS_DIR = os.path.join(ROOT_DIR, '.secrets')
 PRINT_JSON_SETTINGS = False
-import_secrets()
+secrets = import_secrets()
 
 # sentry
 sentry_sdk.init(
-    dsn=DSN_ADDRESS,
+    dsn=secrets['SENTRY_DSN_ADDRESS'],
     integrations=[DjangoIntegration()]
 )
 
