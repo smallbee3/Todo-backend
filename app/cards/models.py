@@ -12,10 +12,12 @@ class Card(models.Model):
     )
     created_date = models.DateField(
         verbose_name='Created date',
-
         auto_now_add=True,
     )
     modified_date = models.DateField(
         verbose_name='Modified date',
         auto_now=True
     )
+
+    def __str__(self):
+        return f'{self.pk} {self.contents}'

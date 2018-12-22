@@ -9,10 +9,9 @@ __all__ = (
 
 class CardSerializer(serializers.ModelSerializer):
 
-    # contents = serializers.CharField()
-
     class Meta:
         model = Card
         fields = (
+            'pk',
             'contents',
         )
