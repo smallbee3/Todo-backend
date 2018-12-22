@@ -46,17 +46,23 @@ INSTALLED_APPS = [
 
     # Third party app
     'rest_framework',
+    'corsheaders',
 
     # Custom app
     'users',
     'cards',
 ]
 
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+)
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'utils.custom_pagination.CustomPagination',
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
