@@ -19,5 +19,8 @@ class Card(models.Model):
         auto_now=True
     )
 
+    class Meta:
+        ordering = ['-pk']
+
     def __str__(self):
         return f'{self.pk} {self.contents}'
