@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # Third party app
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
 
     # Custom app
@@ -60,6 +61,10 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
     'DEFAULT_PAGINATION_CLASS': 'utils.custom_pagination.CustomPagination',
 }
 
