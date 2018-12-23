@@ -2,6 +2,7 @@ FROM        smallbee3/trello:base
 MAINTAINER  smallbee3@gmail.com
 
 ENV         BUILD_MODE  prod
+ENV         DJANGO_SETTINGS_MODULE  config.settings.${BUILD_MODE}
 
 # Frontend
 WORKDIR /srv
