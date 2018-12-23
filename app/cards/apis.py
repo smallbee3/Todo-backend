@@ -4,16 +4,16 @@ from cards.models import Card
 from .serializers import CardSerializer
 
 __all__ = (
-    'CardListCreateView',
-    'CardRetrieveUpdateDestroyView',
+    'CardListCreateAPIView',
+    'CardRetrieveUpdateDestroyAPIView',
 )
 
 
-class CardListCreateView(generics.ListCreateAPIView):
+class CardListCreateAPIView(generics.ListCreateAPIView):
     queryset = Card.objects.all()
     serializer_class = CardSerializer
 
 
-class CardRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class CardRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Card.objects.all()
     serializer_class = CardSerializer
