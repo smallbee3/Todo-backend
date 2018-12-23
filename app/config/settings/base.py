@@ -55,6 +55,8 @@ INSTALLED_APPS = [
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
+    'ec2-13-209-42-68.ap-northeast-2.compute.amazonaws.com',
+    'trello.smallbee.me',
 )
 
 REST_FRAMEWORK = {
