@@ -1,4 +1,7 @@
+from django.contrib.auth import get_user_model
 from django.db import models
+
+User = get_user_model()
 
 __all___ = (
     'Card',
@@ -17,6 +20,10 @@ class Card(models.Model):
     modified_date = models.DateField(
         verbose_name='Modified date',
         auto_now=True
+    )
+    owner = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE
     )
 
     class Meta:

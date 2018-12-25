@@ -14,4 +14,5 @@ class CardSerializer(serializers.ModelSerializer):
         fields = (
             'pk',
             'contents',
+            'owner',
         )
