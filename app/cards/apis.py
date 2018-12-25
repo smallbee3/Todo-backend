@@ -1,7 +1,8 @@
 from rest_framework import generics, permissions
 
 from cards.models import Card
-from users.permissions import IsOwnerOrReadOnly
+from utils.permissions import IsOwnerOrReadOnly
+
 from .serializers import CardSerializer
 
 __all__ = (
