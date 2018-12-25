@@ -7,8 +7,8 @@ __all___ = (
 
 
 class User(AbstractUser):
-    username = models.CharField(max_length=50, unique=True)
-    email = models.EmailField(blank=True, null=True)
+    username = models.EmailField(unique=True)
+    nickname = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return f'{self.pk} {self.username}'
