@@ -21,4 +21,5 @@ class CardSerializer(serializers.ModelSerializer):
             'pk',
             'contents',
             'owner',
+            'is_checked',
         )

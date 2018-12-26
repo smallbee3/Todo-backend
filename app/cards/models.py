@@ -25,6 +25,9 @@ class Card(models.Model):
         User,
         on_delete=models.CASCADE
     )
+    is_checked = models.BooleanField(
+        default=False
+    )
 
     class Meta:
         ordering = ['-pk']
