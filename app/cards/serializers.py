@@ -1,6 +1,10 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
+from users.serializers import UserSerializer
 from .models import Card
+
+User = get_user_model()
 
 __all__ = (
     'CardSerializer',
@@ -8,6 +12,8 @@ __all__ = (
 
 
 class CardSerializer(serializers.ModelSerializer):
+
+    owner = UserSerializer(read_only=True)
 
     class Meta:
         model = Card
