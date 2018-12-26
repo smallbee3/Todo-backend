@@ -27,5 +27,5 @@ class CardRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CardSerializer
     permission_classes = (
         permissions.IsAuthenticated,
-        IsOwnerOrReadOnly,
+        # IsOwnerOrReadOnly,
     )
