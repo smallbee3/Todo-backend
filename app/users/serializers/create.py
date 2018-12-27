@@ -50,6 +50,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         nickname = validated_data['username'].split('@')[0]
+        validated_data.pop('password_confirm')
         validated_data['nickname'] = nickname
         return User.objects.create_django_user(**validated_data)
 
