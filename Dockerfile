@@ -1,4 +1,4 @@
-FROM        smallbee3/trello:base
+FROM        smallbee3/todo:base
 MAINTAINER  smallbee3@gmail.com
 
 ENV         BUILD_MODE  prod
@@ -8,7 +8,7 @@ ENV         DJANGO_SETTINGS_MODULE  config.settings.${BUILD_MODE}
 # 1) git clone
 WORKDIR     /srv
 RUN         rm -rf      /srv/frontend
-RUN         git clone https://github.com/smallbeehive/trello-frontend.git frontend
+RUN         git clone https://github.com/smallbee3/Todo-frontend.git frontend
 WORKDIR     /srv/frontend
 # 2) git pull
 #WORKDIR    /srv/frontend

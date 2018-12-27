@@ -4,7 +4,7 @@ import sys
 
 MODES = ['base', 'local', 'dev', 'prod']
 
-PROJECT_NAME = 'trello'
+PROJECT_NAME = 'todo'
 
 
 def get_mode():
