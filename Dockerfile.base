@@ -15,5 +15,5 @@ RUN         rm -f          /srv/requirements.txt
 
 # Frontend
 RUN     apt-get -y install git curl
-RUN     apt-get -y install nodejs
 RUN     curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN     apt-get -y install nodejs

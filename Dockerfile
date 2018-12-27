@@ -6,16 +6,16 @@ ENV         DJANGO_SETTINGS_MODULE  config.settings.${BUILD_MODE}
 
 # Frontend
 # 1) git clone
-WORKDIR /srv
-RUN     rm -rf      /srv/frontend
-RUN     git clone https://github.com/smallbeehive/trello-frontend.git frontend
-WORKDIR /srv/frontend
+WORKDIR     /srv
+RUN         rm -rf      /srv/frontend
+RUN         git clone https://github.com/smallbeehive/trello-frontend.git frontend
+WORKDIR     /srv/frontend
 # 2) git pull
-#WORKDIR /srv/frontend
-#RUN     git pull origin master
+#WORKDIR    /srv/frontend
+#RUN        git pull origin master
 
-RUN     npm install
-RUN     npm run build
+RUN         npm install
+RUN         npm run build
 
 # Backend
 COPY        .   /srv/project
