@@ -5,7 +5,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '.elasticbeanstalk.com',
     '.amazonaws.com',
-    'trello-api.smallbee.me',
+    'todo-api.smallbee.me',
 ]
 
 WSGI_APPLICATION = 'config.wsgi.prod.application'
