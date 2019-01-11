@@ -1,0 +1,11 @@
+-i https://pypi.org/simple
+certifi==2018.11.29
+django-cors-headers==2.4.0
+django-json-secrets==0.1.11
+django==2.1.5
+djangorestframework==3.9.0
+psycopg2-binary==2.7.6.1
+pytz==2018.9
+sentry-sdk==0.6.6
+urllib3==1.24.1
+uwsgi==2.0.17.1
