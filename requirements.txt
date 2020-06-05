@@ -1,11 +1,12 @@
--i https://pypi.org/simple
-certifi==2018.11.29
+-i https://pypi.org/simple/
+certifi==2020.4.5.1
 django-cors-headers==2.4.0
 django-json-secrets==0.1.11
-django==2.1.5
+django==2.2.13
 djangorestframework==3.9.0
 psycopg2-binary==2.7.6.1
-pytz==2018.9
+pytz==2020.1
 sentry-sdk==0.6.6
-urllib3==1.24.1
+sqlparse==0.3.1
+urllib3==1.25.9
 uwsgi==2.0.17.1
