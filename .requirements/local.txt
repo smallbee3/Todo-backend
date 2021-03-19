@@ -10,7 +10,7 @@ Django==2.1.4
 django-cors-headers==2.4.0
 django-extensions==2.1.4
 django-json-secrets==0.1.11
-djangorestframework==3.9.0
+djangorestframework==3.11.2
 docker==3.6.0
 docker-compose==1.21.2
 docker-pycreds==0.4.0

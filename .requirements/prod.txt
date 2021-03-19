@@ -1,7 +1,7 @@
 Django<2.2
 django-cors-headers<2.5
 django-json-secrets<0.2
-djangorestframework<3.10
+djangorestframework<3.12
 psycopg2-binary<2.8
 sentry-sdk<0.7
 uWSGI<2.1
